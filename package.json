@@ -1,0 +1,39 @@
+{
+  "name": "babel-plugin-git-info",
+  "version": "0.0.0",
+  "description": "Generate and insert git informations into the package during compilation",
+  "main": "lib/index.js",
+  "author": "yuanshenmick <yuanshenmick@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "standard --fix",
+    "commit": "git-cz",
+    "release": "standard-version",
+    "build": "rimraf lib && babel src --out-dir lib"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-conventional": "^7.5.0",
+    "commitizen": "^3.1.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.5",
+    "rimraf": "^2.6.3",
+    "standard": "^12.0.1"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "yarn lint",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
