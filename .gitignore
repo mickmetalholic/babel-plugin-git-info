@@ -85,3 +85,6 @@ typings/
 
 # output
 lib
+
+# git directory for test
+src/__tests__/repo
