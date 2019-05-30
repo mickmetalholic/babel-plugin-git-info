@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-git-info",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Generate and insert git informations into the package during compilation",
   "main": "lib/index.js",
   "author": "yuanshenmick <yuanshenmick@gmail.com>",
