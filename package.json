@@ -31,10 +31,8 @@
   "lint-staged": {
     "*.{js,ts}": [
       "yarn lint",
-      "git add"
-    ],
-    "src/**/*.{js,ts}": [
-      "yarn test"
+      "git add",
+      "yarn test --findRelatedTests"
     ]
   },
   "config": {
