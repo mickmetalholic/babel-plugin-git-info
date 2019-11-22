@@ -22,7 +22,7 @@ export default function ({ types: t }) {
         this.commitMessage = getCommitMessage({ repoDir })
         this.branchName = getBranchName({ repoDir })
       },
-      Identifier (path) {
+      ReferencedIdentifier (path) {
         switch (path.node.name) {
           case 'GIT_COMMIT_HASH':
             path.replaceWith(t.stringLiteral(this.commitHash))
