@@ -1,6 +1,6 @@
 # babel-plugin-git-info
 
-A babel plugin that substitutes environment variables with git commit informations.
+A babel plugin that generate and insert git information into the files during compilation.
 
 ## Installation
 
@@ -60,4 +60,4 @@ require("@babel/core").transform("code", {
 
 ### `hashLength`
 
-`number`, defaults to `-1`, which remain the full length of commit hash.
+`number`, defaults to `-1`, which means to remain the full length of commit hash.
