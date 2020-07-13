@@ -39,7 +39,7 @@
     "lint-staged": "^8.1.5",
     "rimraf": "^2.6.3",
     "standard": "^14.3.1",
-    "standard-version": "^6.0.1"
+    "standard-version": "^8.0.1"
   },
   "lint-staged": {
     "*.{js,ts}": [
